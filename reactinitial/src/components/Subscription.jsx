@@ -35,8 +35,9 @@ function Subscription({ setSubscription }) {
         {
             !submitted && !loading ?
                 <>
-                    <TextField id="outlined-basic" label="Outlined" variant="outlined" value={input} onChange={(e) => setInput(e.target.value)}/>
-                    <Button variant="contained" onClick={handleClick}>Contained</Button>
+                    <h2>Subscribe to our newsletter</h2>
+                    <TextField id="outlined-basic" label="E-mail" variant="outlined" value={input} onChange={(e) => setInput(e.target.value)}/>
+                    <Button variant="contained" onClick={handleClick}>Subscribe</Button>
                 </> : submitted && loading ?
                 <div>Loading</div> :
                 <div>Subscribed</div>
