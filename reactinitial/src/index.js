@@ -6,4 +6,4 @@ import "./style.css";
 import { makeServer } from './api/mockserver'
 makeServer({ environment: 'development' })
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(<App title="Series Api" />, document.getElementById("root"));
